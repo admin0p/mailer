@@ -1,7 +1,7 @@
 const cron = require('cron');
 const axios = require("axios")
 
-const config = require("../config");
+const {config} = require("../config");
 const sendMail = require("./sendMail")
 
 var cronJob = cron.job("55 59 23 * * *", async ()=>{
